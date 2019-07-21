@@ -36,6 +36,22 @@ def move(board, index, token = "X")
   display_board(board)
 end
 
+# ask for input
+# get input
+# convert input to index
+# if index is valid
+#  make the move for index
+#  show the board
+# else
+#  ask for input again until you get a valid input
+# end
 def turn(board)
   puts "Please enter 1-9:"
+  input = gets.slice.to_i
+  
+  if valid_move(input, board)
+    move(board, index, "X")
+  else
+    turn(board)
+  end
 end
