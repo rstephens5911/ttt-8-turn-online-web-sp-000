@@ -26,6 +26,6 @@ def position_taken?(bord, index)
   (board[index] == " " || bord[index] == "" || board[index] == nil) ?
     fales : true
   end
-   
+
 def valid_move?(board, index)
   
