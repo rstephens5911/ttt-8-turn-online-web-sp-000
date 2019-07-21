@@ -47,7 +47,8 @@ end
 # end
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets
+  input = gets.slice
+  input_to_index(input)
 
   if valid_move?(input, board)
     move(board, index, "X")
