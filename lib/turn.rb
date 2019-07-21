@@ -46,9 +46,13 @@ end
 #  ask for input again until you get a valid input
 # end
 def turn(board)
+  # ask the user for input:
   puts "Please enter 1-9:"
+  # gets the user input
   input = gets.strip
-
+  # calls the input_to_index method
   input_to_index(input)
+  #validates the input correctly
+  valid_move?(board, input)
 
 end
