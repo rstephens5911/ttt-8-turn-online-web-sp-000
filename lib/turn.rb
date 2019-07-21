@@ -39,7 +39,7 @@ end
 
 def move(board, index, token = "X")
   if valid_move?(board, index)
-    board[index] == token
+    board[index] = token
   else
     move
   end
