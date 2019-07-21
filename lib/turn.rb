@@ -43,5 +43,5 @@ def move(board, index, token = "X")
   else
     move
   end
-  display_board
+  display_board(board, index)
 end
