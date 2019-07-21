@@ -49,7 +49,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets
 
-  if valid_move(input, board)
+  if valid_move?(input, board)
     move(board, index, "X")
   else
     turn(board)
