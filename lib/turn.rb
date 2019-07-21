@@ -28,7 +28,7 @@ def position_taken?(board, index)
   # check if board - index is empty -> " " or ""
   # ternary solution:
   (board[index] == " " || bord[index] == "" || board[index] == nil) ?
-    fales : true
+    false : true
   end
 
 def valid_move?(board, index)
