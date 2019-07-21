@@ -23,6 +23,12 @@ def position_taken?(board, index)
   end
 
 def valid_move?(board, index)
+  def position_taken?(board, index)
+    # check if board - index is empty -> " " or ""
+    # ternary solution:
+    (board[index] == " " || board[index] == "" || board[index] == nil) ?
+      false : true
+    end
   if index.between?(0,8) && !position_taken?(board, index)
     true
   end
@@ -55,6 +61,6 @@ def turn(board)
   # calls the input_to_index method
   input_to_index(input)
   #validates the input correctly
-  valid_move?(board, index)
+  valid_move?(board, input)
 
 end
