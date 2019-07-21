@@ -27,7 +27,7 @@ end
 def position_taken?(board, index)
   # check if board - index is empty -> " " or ""
   # ternary solution:
-  (board[index] == " " || bord[index] == "" || board[index] == nil) ?
+  (board[index] == " " || board[index] == "" || board[index] == nil) ?
     false : true
   end
 
