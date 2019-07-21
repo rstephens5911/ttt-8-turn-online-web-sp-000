@@ -50,9 +50,10 @@ def turn(board)
   puts "Please enter 1-9:"
   # gets the user input
   input = gets.strip
+  index = input.to_i - 1
   # calls the input_to_index method
   input_to_index(input)
   #validates the input correctly
-  valid_move?(board, input)
+  valid_move?(board, index)
 
 end
